@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5DCDDC1CB3F5B700A4204C /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE5DCDDB1CB3F5B700A4204C /* 0.jpg */; };
+		DE6A48731CB48C630019C21B /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6A48721CB48C630019C21B /* BounceView.m */; };
+		DE6A48761CB48C770019C21B /* PathLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6A48751CB48C770019C21B /* PathLine.m */; };
 		DE6FED691C489DF700F26D3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FED681C489DF700F26D3F /* main.m */; };
 		DE6FED6C1C489DF700F26D3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FED6B1C489DF700F26D3F /* AppDelegate.m */; };
 		DE6FED6F1C489DF700F26D3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FED6E1C489DF700F26D3F /* ViewController.m */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE5DCDDB1CB3F5B700A4204C /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		DE6A48711CB48C630019C21B /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
+		DE6A48721CB48C630019C21B /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
+		DE6A48741CB48C770019C21B /* PathLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathLine.h; sourceTree = "<group>"; };
+		DE6A48751CB48C770019C21B /* PathLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathLine.m; sourceTree = "<group>"; };
 		DE6FED641C489DF700F26D3F /* RUSTBounceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUSTBounceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6FED681C489DF700F26D3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE6FED6A1C489DF700F26D3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE6A48771CB48C840019C21B /* bounceView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A48741CB48C770019C21B /* PathLine.h */,
+				DE6A48751CB48C770019C21B /* PathLine.m */,
+				DE6A48711CB48C630019C21B /* BounceView.h */,
+				DE6A48721CB48C630019C21B /* BounceView.m */,
+			);
+			name = bounceView;
+			sourceTree = "<group>";
+		};
 		DE6FED5B1C489DF700F26D3F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,8 @@
 		DE6FED661C489DF700F26D3F /* RUSTBounceView */ = {
 			isa = PBXGroup;
 			children = (
+				DE6A48771CB48C840019C21B /* bounceView */,
+				DE5DCDDB1CB3F5B700A4204C /* 0.jpg */,
 				DE6FED6A1C489DF700F26D3F /* AppDelegate.h */,
 				DE6FED6B1C489DF700F26D3F /* AppDelegate.m */,
 				DE6FED6D1C489DF700F26D3F /* ViewController.h */,
@@ -243,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5DCDDC1CB3F5B700A4204C /* 0.jpg in Resources */,
 				DE6FED771C489DF700F26D3F /* LaunchScreen.storyboard in Resources */,
 				DE6FED741C489DF700F26D3F /* Assets.xcassets in Resources */,
 				DE6FED721C489DF700F26D3F /* Main.storyboard in Resources */,
@@ -272,6 +294,8 @@
 			files = (
 				DE6FED6F1C489DF700F26D3F /* ViewController.m in Sources */,
 				DE6FED6C1C489DF700F26D3F /* AppDelegate.m in Sources */,
+				DE6A48731CB48C630019C21B /* BounceView.m in Sources */,
+				DE6A48761CB48C770019C21B /* PathLine.m in Sources */,
 				DE6FED691C489DF700F26D3F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RUSTBounceView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RUST.RUSTBounceView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RUSTBounceView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RUST.RUSTBounceView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +522,7 @@
 				DE6FED931C489DF700F26D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE6FED941C489DF700F26D3F /* Build configuration list for PBXNativeTarget "RUSTBounceViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				DE6FED961C489DF700F26D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE6FED971C489DF700F26D3F /* Build configuration list for PBXNativeTarget "RUSTBounceViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +540,7 @@
 				DE6FED991C489DF700F26D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

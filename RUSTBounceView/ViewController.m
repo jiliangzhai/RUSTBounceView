@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BounceView.h"
+#import "TableViewController.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIImage *image = [UIImage imageNamed:@"0.jpg"];
+    BounceView *view = [[BounceView alloc] initWithFrame:[UIScreen mainScreen].bounds image:image startLocation:CGPointMake(200, 200)];
+    view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
