@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "BounceView.h"
-#import "TableViewController.h"
 
 @interface ViewController ()
 
@@ -20,9 +19,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImage *image = [UIImage imageNamed:@"0.jpg"];
+    UIImage *image = [UIImage imageNamed:@"gua.jpg"];
     BounceView *view = [[BounceView alloc] initWithFrame:[UIScreen mainScreen].bounds image:image startLocation:CGPointMake(200, 200)];
-    view.backgroundColor = [UIColor grayColor];
+    view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:view];
 }
 
