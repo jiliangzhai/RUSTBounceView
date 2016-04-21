@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE1B04661CB6A9F8000EB5D9 /* kiss.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1B04651CB6A9F8000EB5D9 /* kiss.png */; };
 		DE1B046C1CB6ABAE000EB5D9 /* gua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1B046B1CB6ABAE000EB5D9 /* gua.jpg */; };
+		DE3EE03B1CC090DC00A706FF /* MyBounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3EE03A1CC090DC00A706FF /* MyBounceView.m */; };
 		DE6A48731CB48C630019C21B /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6A48721CB48C630019C21B /* BounceView.m */; };
 		DE6A48761CB48C770019C21B /* PathLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6A48751CB48C770019C21B /* PathLine.m */; };
 		DE6FED691C489DF700F26D3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FED681C489DF700F26D3F /* main.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		DE1B04651CB6A9F8000EB5D9 /* kiss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiss.png; sourceTree = "<group>"; };
 		DE1B046B1CB6ABAE000EB5D9 /* gua.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gua.jpg; sourceTree = "<group>"; };
+		DE3EE0391CC090DC00A706FF /* MyBounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBounceView.h; sourceTree = "<group>"; };
+		DE3EE03A1CC090DC00A706FF /* MyBounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBounceView.m; sourceTree = "<group>"; };
 		DE6A48711CB48C630019C21B /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
 		DE6A48721CB48C630019C21B /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
 		DE6A48741CB48C770019C21B /* PathLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathLine.h; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE3EE0381CC090AD00A706FF /* BounceView2 */ = {
+			isa = PBXGroup;
+			children = (
+				DE3EE0391CC090DC00A706FF /* MyBounceView.h */,
+				DE3EE03A1CC090DC00A706FF /* MyBounceView.m */,
+			);
+			name = BounceView2;
+			sourceTree = "<group>";
+		};
 		DE6A48771CB48C840019C21B /* bounceView */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 			children = (
 				DE1B046B1CB6ABAE000EB5D9 /* gua.jpg */,
 				DE1B04651CB6A9F8000EB5D9 /* kiss.png */,
+				DE3EE0381CC090AD00A706FF /* BounceView2 */,
 				DE6A48771CB48C840019C21B /* bounceView */,
 				DE6FED6A1C489DF700F26D3F /* AppDelegate.h */,
 				DE6FED6B1C489DF700F26D3F /* AppDelegate.m */,
@@ -296,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3EE03B1CC090DC00A706FF /* MyBounceView.m in Sources */,
 				DE6FED6F1C489DF700F26D3F /* ViewController.m in Sources */,
 				DE6FED6C1C489DF700F26D3F /* AppDelegate.m in Sources */,
 				DE6A48731CB48C630019C21B /* BounceView.m in Sources */,

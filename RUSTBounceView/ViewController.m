@@ -8,8 +8,15 @@
 
 #import "ViewController.h"
 #import "BounceView.h"
+#import "MyBounceView.h"
 
 @interface ViewController ()
+{
+}
+@property (nonatomic,weak)UIButton *changeButton;
+@property (nonatomic,weak)MyBounceView *bouceView1;
+@property (nonatomic,weak)BounceView *bounceView2;
+
 
 @end
 
@@ -20,9 +27,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIImage *image = [UIImage imageNamed:@"gua.jpg"];
-    BounceView *view = [[BounceView alloc] initWithFrame:[UIScreen mainScreen].bounds image:image startLocation:CGPointMake(200, 200)];
+    MyBounceView *view = [[MyBounceView alloc] initWithFrame:[UIScreen mainScreen].bounds image:image startLocation:CGPointMake(200, 200)];
     view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:view];
+    
+    self.bouceView1 = view;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,3 +40,9 @@
 }
 
 @end
+
+
+
+
+
+

@@ -38,7 +38,7 @@
         lines = [NSMutableArray array];
         viewWidth = frame.size.width;
         viewHeight = frame.size.height;
-        imageRadius= 30;
+        imageRadius= 25;
         startLocation = location;
     }
     
@@ -60,7 +60,7 @@
     bounceLayer.position = startLocation;
     bounceLayer.cornerRadius = imageRadius;
     bounceLayer.borderWidth = 2.0;
-    bounceLayer.borderColor = [UIColor yellowColor].CGColor;
+    bounceLayer.borderColor = [UIColor lightGrayColor].CGColor;
     bounceLayer.masksToBounds = YES;
     //bounceLayer.contents = (id)[self thumbnailMakerWithImage:targetImage size:bounceLayer.bounds.size].CGImage;
     bounceLayer.contents = (id)targetImage.CGImage;
